@@ -10,8 +10,7 @@ Use a multi-dimensional array to store the game board.
 
 Sample board after round 1:
 
-// image
-
+![Sample Board](/images/sample-board.png)
 
 After each round, your game must:
 
