@@ -8,7 +8,7 @@ Write a program that creates a tic tac toe game with two players. Each round the
 
 Develop an intelligent agent that will beat Player 1.
 
-Note: Use a multi-dimensional array to store the game board.
+_Note: Use a multi-dimensional array to store the game board._
 
 Sample board after round 1:
 
