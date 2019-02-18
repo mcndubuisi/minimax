@@ -20,3 +20,7 @@ After each round, your game must:
 A player wins if they have 3 in a row (vertically, horizonatally, or diagonally).
 
 You will be graded on your agen's ability to win the game
+
+             | 0 points      | 1 point      | 2 points      | 3 points      | 4 points
+------------ | ------------- | ------------- | ------------- | -------------
+Intelligent Agent | 0 wins | 1 win | 2 wins | 3 wins | 4+ wins
