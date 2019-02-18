@@ -21,13 +21,6 @@ A player wins if they have 3 in a row (vertically, horizonatally, or diagonally)
 
 You will be graded on your agen's ability to win the game
 
-    1/         | 0 points      | 1 point      | 2 points      | 3 points      | 4 points
------------- | ------------- | ------------- | ------------- | ------------- | ------------- 
-Intelligent Agent | 0 wins | 1 win | 2 wins | 3 wins | 4+ wins
-
-
-// test
-
-1 | 0 points | 1 point       | 2 points      | 3 points      | 4 points
------------- | ------------- | ------------- | ------------- | ------------- 
-Content cell 1 | Content cell 2 | Content cell 2 | Content cell 2 | Content cell 2
+|                   | 0 points | 1 point | 2 points | 3 points | 4 points |
+|-------------------|----------|---------|----------|----------|----------|
+| Intelligent Agent | 0 wins   | 1 win   | 2 wins   | 3 wins   | 4 wins   |
