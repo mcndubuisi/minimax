@@ -10,7 +10,7 @@ Develop an intelligent agent that will beat Player 1.
 
 _Note: Use a multi-dimensional array to store the game board._
 
-Sample board after round 1:
+**Sample board after round 1:**
 
 ![Sample Board](/img/sample-board.png)
 
@@ -22,7 +22,7 @@ After each round, your game must:
 A player wins if they have 3 in a row (vertically, horizonatally, or diagonally).
 
 ### Rubric
-You will be graded on your agen's ability to win the game.
+You will be graded on your agent's ability to win the game.
 
 |                   | 0 points | 1 point | 2 points | 3 points | 4 points |
 |-------------------|----------|---------|----------|----------|----------|
