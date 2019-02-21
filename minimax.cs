@@ -10,14 +10,15 @@ class MainClass
   public static void play()
   {
     Random rand = new Random();
-    int random_x = rand.Next(1, 4);
-    int random_y = rand.Next(1, 4);
+    int random_x = rand.Next(0, 3);
+    int random_y = rand.Next(0, 3);
 
     if(isEmpty(random_x, random_y))
     {
-      random_x = rand.Next(1, 4);
-      random_y = rand.Next(1, 4);
+      random_x = rand.Next(0, 3);
+      random_y = rand.Next(0, 3);
       board[random_x,random_y] = computer;
+      printBoard();
     }
     else
     {
@@ -75,10 +76,26 @@ class MainClass
     " {0} | {1} | {2} \n---|---|--- \n {3} | {4} | {5} \n---|---|--- \n {6} | {7} | {8} \n", board[0,0], board[0,1], board[0,2], board[1,0], board[1,1], board[1,2], board[2,0], board[2,1], board[2,2]);
   }
 
+  public static bool boardEmpty()
+  {
+    for(int j=0; j<3; j++)
+    {
+      for(int k=0; k<3; k++)
+      {
+        if(board[j, k] == '-')
+        {
+          return false;
+        }
+      }
+    }
+
+    return true;
+  }
+
   public static void Main(string[] args)
   {
     printBoard();
-    for(int i=0; i<4; i++)
+    while(checkForWin() != true && boardEmpty() != true)
     {
       Console.Write("Enter x: ");
       int x = int.Parse(Console.ReadLine());
@@ -88,11 +105,11 @@ class MainClass
       if(isEmpty(x, y))
       {
         board[x,y] = 'O';
+        play();
       }
       else
       {
         Console.WriteLine("That square is not empty");
-        i--;
       }
     }
   }
